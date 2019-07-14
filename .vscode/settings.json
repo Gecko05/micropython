@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "binary.h": "c",
+        "portmodules.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}
