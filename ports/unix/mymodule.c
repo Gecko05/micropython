@@ -84,10 +84,10 @@ STATIC mp_obj_t mymodule_hello_increment(mp_obj_t self_in) {
 
 STATIC MP_DEFINE_CONST_FUN_OBJ_1(mymodule_hello_obj, mymodule_hello);
 
-STATIC const mp_rom_map_elem_t mymodule_globals_table[] = {
+STATIC const mp_map_elem_t mymodule_globals_table[] = {
     { MP_OBJ_NEW_QSTR(MP_QSTR___name__), MP_OBJ_NEW_QSTR(MP_QSTR_mymodule) },
     { MP_OBJ_NEW_QSTR(MP_QSTR_hello), (mp_obj_t)&mymodule_hello_obj },
-    { MP_OBJ_NEW_QSTR(MP_QSTR_helloObj), MP_ROM_PTR(&mymodule_helloObj_type) }
+    { MP_OBJ_NEW_QSTR(MP_QSTR_helloObj), (mp_obj_t)(&mymodule_helloObj_type) }
 };
 
 STATIC MP_DEFINE_CONST_DICT (
